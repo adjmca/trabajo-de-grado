@@ -1,0 +1,92 @@
+% Capítulo 2
+
+\chapter{Marco Conceptual} % Título Principal del Capítulo
+
+\label{Capitulo2} % Para hacer referenciar este capítudo use \ref{Capitulo2}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+\section{ Ingeniería del software}
+La ingeniería del software es una disciplina de la ingeniería que comprende todos los aspectos de la producción de software desde las etapas iniciales de la especificación del sistema, hasta el mantenimiento de este después de que se utiliza.En esta definición, existen dos frases clave:\\
+
+\begin{itemize}
+	\item Disciplina de la ingeniería:Los ingenieros hacen que las cosas funcionen. Aplican teorías, métodos y herramientas donde sean convenientes, pero las utilizan de forma selectiva y siempre tratando de encontrar soluciones a los problemas, aun cuando no existan teorías y métodos aplicables para resolverlos. Los ingenieros también saben de que deben trabajar con restricciones financieras y a nivel de organización, por lo que buscan soluciones tomando en cuenta estas restricciones.
+	\item Todos los aspectos de producción de software: La ingeniería del software no solo comprende los procesos técnicos del desarrollo de software, sino también con actividades tales como la gestión de proyectos de software y el desarrollo de herramientas, métodos y teorías de apoyo a la producción del software. 
+\end{itemize}
+En resumen, los ingenieros de software adoptan un enfoque sistemático y organizado en su trabajo, ya que es la forma mas efectiva de producir software de alta calidad.
+
+\subsection{Proceso del software}
+Un proceso del software es un conjunto de actividades y resultados asociados que producen un producto de software. Estas actividades son llevadas a cabo por los ingenieros de software. Existen cuatro actividades fundamentales de procesos que son comunes para todos los procesos del software las cuales son:\\
+
+	\begin{itemize}
+		\item Especificación del software donde los clientes o ingenieros definen el software a producir y las restricciones sobre su operación.
+		\item Desarrollo del software donde el software se diseña y programa.
+		\item Validación del software donde el software se valida para asegurar que es lo que el cliente requiere.
+		\item Evolución del software donde el software se modifica para adaptarlo a los cambios requeridos por el cliente y el mercado. 
+	\end{itemize}
+	
+\subsection{Modelo de procesos del software }
+Un modelo de procesos del software es una descripción simplificada de un proceso del software que presenta una visión de ese proceso.Estos modelos pueden incluir actividades que son parte de los procesos y productos de software y el papel de las personas involucradas en la ingeniería del software. Algunos ejemplos de estos tipos de modelos que se pueden producir son:\\
+
+\begin{itemize}
+	\item Un modelo de flujo de trabajo:Muestra la secuencia de actividades en el proceso junto con entradas, salidas y dependencias. Las actividades en este modelo representan acciones humanas.
+	\item Un modelo de flujo de datos o de actividad: Representa el proceso como un conjunto de actividades, cada una de las cuales realiza alguna transformación en los datos. Muestra como la entrada en el proceso, tal como una especificación, se transforma en una salida, tal como un diseño. Pueden representar transformaciones llevadas a cabo por las personas o por las computadoras.
+	\item UN modelo de roll acción:Representa los roles de las personas involucradas en el proceso del software y las actividades de las que son responsables. 
+\end{itemize}
+%-----------------------------------
+
+%-----------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+\section{Aforo Vehicular}
+El conteo de tráfico vehicular es realizado con el propósito de obtener información relacionada con el movimiento de vehículos sobre puntos o secciones específicas dentro de un sistema vial. Estos datos son expresados con respecto al tiempo y de su conocimiento se hace posible el desarrollo de estimaciones razonables de la calidad de servicio prestado a los usuarios.
+
+Generalmente se realiza en el punto o tramo de carretera de interés, la cual se realizará durante todo el día, fijando mayor énfasis a la hora pico. Como sabemos,son dos picos de afluencia vehicular, una es cuando los usuarios de la vía se dirigen a su lugar de trabajo o estudio y la otra cuando retornan a sus hogares.
+
+\subsection{Conteo Manual}
+En su forma más simple requiere de una persona que anote el número de autos que circulan por el punto o tramo de estudio, en intervalos de tiempo de 15 minutos, manejando los movimientos por dirección y por tipo de vehículo, el cual se registra en una hoja de campo. En el registro se realiza un croquis del movimiento con respecto a la dirección del norte. La clasificación de los vehículos puede ser tan simple como la distinción entre automóvil y camión. Se puede utilizar una descripción más detallada de los vehículos comerciales (camiones), por número de ejes y peso. Cabe destacar que a mayor distinción entre vehículos y mayor afluencia, es necesario disponer de aproximadamente 15 personas.
+
+\subsection{Conteo Mecánico}
+Son contadores que funcionan de forma automática sobre la vía, los cuales transmiten impulsos o señales por los vehículos que pasan. Este mecanismo debe ser considerado en la mayoría de los aforos en que se requieren más de 12 horas de datos continuos del mismo lugar. Sirve además para determinar la variación horaria en particular y selecciona la hora de máxima demanda vehicular. De este tipo de aforo existen varios tipos como lo son detectores magnéticos, tubos de precisión, pistola radar, sensores de microondas y detección por computadora mediante procesamiento digital de señales.
+
+\section{Procesamiento Digital de Imágenes}
+El procesamiento digital de imágenes es el conjunto de técnicas que se aplican a las imágenes digitales con el objetivo de mejorar la calidad o facilitar la búsqueda de información dentro de la misma. Antes de extraer la información directamente de la imagen, se acostumbra a ejecutar un procesamiento previo para obtener otra que nos permita realizar la extracción de datos, más sencilla y eficientemente.
+
+\subsection{Binarización de una imagen}
+Consiste en comparar los niveles de gris presentes en la imagen con un valor (umbral) predeterminado. Si el nivel de gris de la imagen es menor que el umbral predeterminado, se le asigna al píxel de la imagen binarizada el valor 0 (negro), y si es mayor, se le asigna un 1 (blanco); de esta forma se obtiene una imagen en blanco y negro. Generalmente se utiliza un umbral de 128 si se trabaja con 256 niveles de gris, sin embargo, en algunas aplicaciones se requiere de otro umbral.
+
+\subsection{Modificación del contraste}
+La modificación del contraste consiste en aplicar una función a cada uno de los
+píxeles de la imagen, de la forma:$P=(m^{a})$ donde:\\
+	
+	\begin{itemize}
+		\item m es el valor de gris de la imagen original.
+		\item p es el nuevo valor de gris en la imagen resultante.
+		\item a es la potencia a la que se eleva.
+	\end{itemize}
+El valor 255 se utiliza para normalizar los valores entre 0 y 255 si se trabaja con imágenes con niveles de gris de 8 bits, de lo contrario se debe remplazar este valor por el valor máximo representable con el número de bits utilizados. Con la función cuadrada y cúbica se oscurece la imagen resultante. Con las funciones raíz cuadrada, raíz cúbica y logarítmica sucede lo inverso.
+
+\subsection{Modificación del histograma}
+Si se desea adquirir información global de la imagen, la forma más fácil de hacerlo es analizar y modificar el histograma. Esto se hace con la idea de que éste se ajuste a una forma predeterminada; la forma más usual se conoce como ecualización del histograma, en la que se pretende que éste sea horizontal, es decir, que para todos los valores de gris se tenga el mismo número de píxeles.
+
+\subsection{Filtrado de una imagen}
+El filtrado es una técnica para modificar o mejorar a una imagen. Por ejemplo, un filtro puede resaltar o atenuar algunas características. El filtrado es una operación de vecindario, en la cual el valor de un píxel dado en la imagen procesada se calcula mediante algún algoritmo que toma en cuenta los valores de los píxeles de la vecindad de la imagen original.
+
+\subsubsection{Realce de bordes}
+El realce de bordes en una imagen tiene un efecto opuesto a la eliminación de ruido; consiste en enfatizar o resaltar aquellos píxeles que tienen un valor de gris diferente al de sus vecinos. Cabe resaltar que si la imagen contiene ruido, su efecto se multiplicará, por lo que ser recomienda primero eliminar el ruido.
+
+\subsubsection{Detección de contornos}
+La detección de contornos es un paso intermedio en el reconocimiento de patrones en imágenes digitales. En una imagen, los contornos corresponden a los limites de los objetos presentes en la imagen. Para hallar los contornos se buscan los lugares en la imagen en los que la intensidad del píxel cambia rápidamente, generalmente usando alguno de los siguientes criterios:
+
+\begin{enumerate}
+	\item Lugares donde la primera derivada (gradiente) de la intensidad es de magnitud mayor que la de un umbral predefinido.
+	\item Lugares donde la segunda derivada (laplaciano) de la intensidad tiene un
+	cruce por cero.
+\end{enumerate}
+
+En el primer caso se buscarán grandes picos y en el segundo cambios de signo.
